@@ -179,7 +179,7 @@ Start a new request on Postman with the follow URL:
 [GET] http://localhost:3000/
 ```
 Supply JSON as follows:
-```
+```json
 {
   "a":[
         [1, 2, 3, 4],
