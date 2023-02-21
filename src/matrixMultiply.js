@@ -1,4 +1,4 @@
-const parallel_matrix_multiply = (A, B, k) => {
+export const parallel_matrix_multiply = (A, B, k) => {
   let n = A.length;
   let C = Array.from(Array(n), () => new Array(n).fill(0));
 
@@ -59,6 +59,3 @@ const matrixMultiply = (A, B) => {
   }
   return C;
 }
-
-
-export default parallel_matrix_multiply;

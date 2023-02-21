@@ -1,5 +1,5 @@
 import express from "express";
-import { parallel_matrix_multiply } from "matrixMultiply";
+import { parallel_matrix_multiply } from "./matrixMultiply";
 
 const PORT = 3000;
 
@@ -11,14 +11,16 @@ app.listen(PORT, () => {
   console.log(`AyaTask-Matrix running at http://localhost:${PORT}`);
 });
 
-const Router = express.Router()
+const Router = express.Router();
 
-Router.get('/', (req, res) => {
+Router.get("/", (req, res) => {
   const { a, b, c } = req.body;
 
-  const solve = parallel_matrix_multiply(a, b, c)
+  const solved = parallel_matrix_multiply(a, b, c);
 
-  return res.status(200).json({ solve })
-})
+  console.log(solved);
+
+  return res.status(200).json({ solved });
+});
 
 app.use(Router);
