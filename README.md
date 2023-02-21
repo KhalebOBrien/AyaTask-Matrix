@@ -146,13 +146,13 @@ This creates two matrices A and B of size 4 x 4 with integer values. Now lets ca
 let C = parallel_matrix_multiply(A, B, 2);
 console.log(C);
 ```
-This should print the resulting matrix C to the console, which should be:
+This should print the resulting matrix C to the console in this format:
 ```
 [
-  [56, 50, 44, 38],
-  [152, 138, 124, 110],
-  [248, 226, 204, 182],
-  [344, 314, 284, 254]
+  [x, x, x, x],
+  [x, x, x, x],
+  [x, x, x, x],
+  [x, x, x, x]
 ]
 ```
 
